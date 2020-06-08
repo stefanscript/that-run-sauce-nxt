@@ -38,10 +38,10 @@ export default function Home() {
             
             <main>
                 <img src={"/GIF_5_secs_TRS.gif"} alt={"That Run Sauce"} className={"logo"}/>
-                <h3>Coming Soon</h3>
+                <img src={"/COMING_SOON.png"} alt={"Coming Soon"} className={"msg"}/>
             </main>
             
-            <style jsx>{`
+        <style jsx>{`
         .container {
           display: flex;
           flex-direction: column;
@@ -55,27 +55,29 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin: 0 20px;
         }
         
         .logo {
             max-width: 300px;
             max-height: 60vh;
+            margin-bottom: 2em;
         }
-        h3 {
-            text-transform: uppercase;
-            font-size: 1.5em;
-            color: #777;
+        .msg {
+            max-width: 250px;
         }
         
         @media all and (min-width: 767px) {
             .logo {
                 max-width: 400px;
             }
+            .msg {
+                max-width: 300px;
+            }
         }
 
         
       `}</style>
-            
             <style jsx global>{`
             html,
             body {
